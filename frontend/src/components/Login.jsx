@@ -6,7 +6,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleSendOtp = async () => {
-    await fetch("http://localhost:5000/api/otp/send", {
+    await fetch("ttps://your-backend-on-render.onrender.com/api/otp/send", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email }),

@@ -8,7 +8,7 @@ const VerifyOtp = () => {
   const email = location.state?.email;
 
   const handleVerify = async () => {
-    const res = await fetch("http://localhost:5000/api/otp/verify", {
+    const res = await fetch("https://your-backend-on-render.onrender.com/api/otp/verify", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, otp }),
